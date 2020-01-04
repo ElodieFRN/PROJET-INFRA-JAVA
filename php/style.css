@@ -1,0 +1,80 @@
+img
+{
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 10%;
+}
+
+h1
+{
+	display: inline-block;
+	text-align: center;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-right: 10%;
+
+}
+
+header
+{
+	margin-bottom: 5%;
+	background-color: lightgrey;
+}
+
+#deco
+{
+	float: right;
+}
+
+body
+{
+	font-family : arial;
+}
+
+#marge
+{
+	position: fixed;
+	left: 0%;
+	width: 25%;
+	height: auto;
+}
+
+h3
+ {
+ 	text-align: center;
+ }
+
+ footer
+{
+	position: bottom;
+	background-color: lightblue;
+	margin-left: 27%;
+	padding-left: 5%;
+	padding-bottom: 2%;
+	padding-top: 0.5%;
+	padding-right: 5%;
+}
+
+#contact
+{
+	font-size: 10;
+}
+
+#devJAVA
+{
+	float: left;
+	text-align: center;
+}
+
+#devWEB
+{
+	float: right;
+	text-align: center;
+}
+
+#infra
+{
+	clear: both;
+	float: center;
+	text-align: center;
+}

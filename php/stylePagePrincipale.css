@@ -1,17 +1,14 @@
-/*
-commentaires
-*/
+#banniere
+{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
 
-body
+form
 {
 	text-align : center ;
-	position : absolute ;
 	font-family : arial;
 }
 
-img
-{
-	/*max-width: 100%;
-    	height: auto;*/
-	width: 100vh;
-}
+

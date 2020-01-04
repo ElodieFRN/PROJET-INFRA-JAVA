@@ -3,9 +3,12 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="stylePagePrincipale.css" />
 		<title> Sport manager event </title>
+		<link rel="icon" type="image/png" href="logo_titre.png">
 	</head>
 	<body>
-		<img src="banniere.png">
+		<div id="banniere">
+			<img src="banniere.png">
+		</div>
 		<form method="post" action="retourIndex.php">
   			<p>
   				<label for="login">Identifiant :</label><br/>
@@ -16,7 +19,7 @@
   			</p>
   			<button type="submit">Se connecter</button><br/><br/>
 			<p> Pas de compte ? 
-			<a href="inscription.php" ><input type="button" value="Rejoins-nous !" </a></p>
+			<a href="inscription.php" ><input type="button" value="Rejoins-nous !" ></a></p>
 		</form>
 	</body>
 </html>

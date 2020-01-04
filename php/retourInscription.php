@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8"/>
-		<title> Spotr manager event</title>
+		<title> Sport manager event</title>
 	</head>
 	<body>
 		<?php
@@ -21,14 +21,14 @@
 			// on sélectionne le jeu de caractères
 			$connexion->set_charset("utf8");
 			// requete à la base de données :
-			$maRequete = "INSERT INTO Utilisateur(nom,prenom,adresse,login,motDePasse) VALUES ('$nom','$prenom','$address','$login','$pass')" ;
+			$maRequete = "INSERT INTO Utilisateur(nom,prenom,mail,motDePasse) VALUES ('$nom','$prenom','$mail',$pass')" ;
 			echo $maRequete;
 		
 			$result = $connexion->query($maRequete);
 			if(!$result) {
-				echo "<br/>Insertion impossible";
+				echo "<br/>Inscription impossible";
 			} else {
-				echo "Insertion effectuée<br>";
+				echo "Inscription effectuée<br>";
 				echo"<a href='menu.php' > Menu</a>";
 			}
 			// on ferme la connexion à la base:
