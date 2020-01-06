@@ -3,7 +3,6 @@
 		<meta charset="utf-8"/>
 		<link rel="stylesheet" href="style.css" />
     	<link rel="stylesheet" href="styleCompte.css" />
-    	<link rel="" type="" href="create.php" />
 		<title>Sport manager event - Compte</title>
 		<link rel="icon" type="image/png" href="logo_titre.png">
 	</head>
@@ -13,7 +12,7 @@
 				<img src="logo_titre.png" width="25%">
 			</a>
 			<h1>Compte personnel</h1>
-			<a id= "deco" href="index.php" ><input type="button" value="Déconnexion" ></a>
+			<a id= "deco" href="index.php">Déconnexion</a>
 		</header>
 	    <section id="marge">
 	    	<nav>
@@ -50,7 +49,7 @@
 					   <p>
 					       <label for="sport">Quel sport pratiquez-vous ?</label><br/>
 					       <select name="sport" id="sport"><br/>
-					       		<option value="none" selected>--Sélectionner un sport--</option>
+					       		<option id="none" value="none" disabled selected>--Sélectionner un sport--</option>
 					           <option value="basket">Basketball</option>
 					           <option value="foot">Football</option>
 					           <option value="tennis">Tennis</option>
@@ -58,15 +57,15 @@
 					       </select>
 					   </p>
 
-					   <p>
+					   <!-- <p>
 					       <label for="niveau">A quel niveau ?</label><br/>
 					       <select name="niveau" id="niveau"><br/>
-					       	<option value="none" selected>--Sélectionner un niveau--</option>
+					       	<option id="none" value="none" disabled selected>--Sélectionner un niveau--</option>
 					           <option value="debutant">Débutant</option>
 					           <option value="amateur">Amateur</option>
 					           <option value="expert">Expert</option>
 					       </select>
-					   </p>
+					   </p> -->
 					   <button type="submit">Sauvegarder</button>
 					</form>
 					<a id= "modifSport" href="modifSport.php" ><input type="button" value="Modifier vos sports" ></a><br/>

@@ -1,4 +1,31 @@
-select
+#data
 {
 	margin-left: 27%;
+}
+
+#none
+{
+	color: grey;
+}
+
+table {
+  font-family: Arial;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: lightgrey;}
+tr:hover {background-color: lightblue;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: steelblue;
+  color: white;
 }

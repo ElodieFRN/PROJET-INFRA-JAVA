@@ -18,8 +18,14 @@
 				<input type="password" name="pass" />
   			</p>
   			<button type="submit">Se connecter</button><br/><br/>
+		</form>
+		<form method="post" action="inscription.php">
 			<p> Pas de compte ? 
-			<a href="inscription.php" ><input type="button" value="Rejoins-nous !" ></a></p>
+			<!-- <a id="inscription" href="inscription.php" style="vertical-align:middle"><input type="button" value="Rejoins-nous !" ></a> -->
+			<button class="button" type="submit" style="vertical-align:middle">
+				<span>Rejoins-nous !</span>
+			</button>
+			</p>
 		</form>
 	</body>
 </html>

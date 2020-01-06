@@ -21,7 +21,7 @@
 			  </ul>
 			</nav>
 	    </section>
-	    <a id= "deco" href="index.php" ><input type="button" value="Déconnexion" ></a>
+	    <a id= "deco" href="index.php">Déconnexion</a>
    	</body>
    	<footer>
     	<h3> Contactez-nous </h3>

@@ -12,7 +12,7 @@
 				<img src="logo_titre.png" width="25%">
 			</a>
 			<h1>Création d'événements </br> sportifs</h1>
-			<a id= "deco" href="index.php" ><input type="button" value="Déconnexion" ></a>
+			<a id= "deco" href="index.php">Déconnexion</a>
 		</header>
 	    <section id="marge">
 	    	<nav>
