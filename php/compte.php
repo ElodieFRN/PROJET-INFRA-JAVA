@@ -22,7 +22,7 @@
 			    <li><a href="compte.php">Compte</a></li></br>
 			    <li><a href="event.php">Evénements</a></li></br>
 			    <li><a href="create.php">Création d'événements</a></li></br>
-			  </ul>
+			  </ul> 
 			</nav>
 	    </section>
 	    <section id="data">
@@ -38,17 +38,17 @@
 	    		</fieldset>
 	    	</article>
 	    	<br/>
-	    	<article id="sport">
+	    	<article id="sportList">
 	    		<fieldset>
 	       			<legend>Sport(s) pratiqué(s)</legend>
 	    			<p> recup bdd liste des sports </p>
 	    			<p> sinon Vous ne pratiquez aucun sport </p>
 
 	    			<h3> Ajouter un sport : </h3>
-	    			<form method="post" action="ajoutSport.php">
+	    			<form name="formu" method="post" action="ajoutSport.php">
 					   <p>
-					       <label for="sport">Quel sport pratiquez-vous ?</label><br/>
-					       <select name="sport" id="sport"><br/>
+					       <label for="sport" id="sportSelected">Quel sport pratiquez-vous ?</label><br/>
+					       <select name="sport" onchange="saveButton();">
 					       		<option id="none" value="none" disabled selected>--Sélectionner un sport--</option>
 					           <option value="basket">Basketball</option>
 					           <option value="foot">Football</option>
@@ -57,17 +57,56 @@
 					       </select>
 					   </p>
 
-					   <!-- <p>
+					   <p>
 					       <label for="niveau">A quel niveau ?</label><br/>
-					       <select name="niveau" id="niveau"><br/>
+					       <select name="niveau" id="niveau" onchange="saveButton();">
 					       	<option id="none" value="none" disabled selected>--Sélectionner un niveau--</option>
-					           <option value="debutant">Débutant</option>
+					           <option value="débutant">Débutant</option>
 					           <option value="amateur">Amateur</option>
 					           <option value="expert">Expert</option>
 					       </select>
-					   </p> -->
-					   <button type="submit">Sauvegarder</button>
+					   </p>
+					   <button id="save" type="submit" autocomplete="off" hidden>Sauvegarder</button>
+					   
 					</form>
+					<script> 
+						//évite que l'utilisateur valide 2 fois son choix
+						 /*$(function() 
+						 {
+						    $('#send').click(function()
+						    {
+						       $(this).attr("disabled", "disabled"); 
+						    });
+						 });*/
+
+						 function saveButton()
+						 	{
+
+						 		//var selectSport = document.getElementById("sportSelected");
+						 		//var selectNiveau = document.getElementById("niveau");
+						 		var choiceSport = document.forms[0].sport.selectedIndex;
+						 		var choiceNiveau = document.forms[0].niveau.selectedIndex;
+						 		var buttonSave = document.getElementById("save");
+
+						 		if(choiceSport != 0 && choiceNiveau != 0){
+						 			alert(buttonSave);
+					 				//alert("ok");
+					 				//buttonSave.attr("disabled", false); 
+					 				buttonSave.style.visibility="visible";
+					 				//document.formu.button.disabled = false;
+						 			
+						 			/*buttonSave.css({
+						 				visibility: "visible"
+						 			});
+						 		}
+							 	
+						 		/*if ($("#sport").val() != "none"){
+						 			alert($("#sport").val());
+						 			//$('button:submit').attr("disabled", false); 
+						 		}*/
+						 	};
+					</script>
+
 					<a id= "modifSport" href="modifSport.php" ><input type="button" value="Modifier vos sports" ></a><br/>
 	    		</fieldset>
 	    	</article>
